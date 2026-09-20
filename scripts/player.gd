@@ -1,8 +1,8 @@
-extends Area2D
+extends CharacterBody2D
 
 @export var speed = 400 # speed of player
 var screen_size
-var velocity = Vector2.ZERO
+#var velocity = Vector2.ZERO
 
 func movement(delta):
 	velocity = Vector2.ZERO # movement vector by default zero
@@ -40,8 +40,6 @@ func animation(delta):
 		$AnimatedSprite2D.animation = "walk_backward"
 	elif velocity.y > 0:	
 		$AnimatedSprite2D.animation = "walk_forward"
-
-		
 
 func _ready():
 	screen_size = get_viewport_rect().size

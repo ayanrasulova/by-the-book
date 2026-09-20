@@ -319,14 +319,16 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j2b1d"]
 size = Vector2(98, 120)
 
-[node name="Player" type="CharacterBody2D" unique_id=855111403]
+[node name="Player" type="CharacterBody2D" unique_id=958158703]
 script = ExtResource("1_qhqgy")
+speed = null
+metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=866879672]
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_nl2iu")
 animation = &"walk_threeforthback"
-frame_progress = 0.07900957
+frame_progress = 0.11413359
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=46140219]
 position = Vector2(0, 25)
