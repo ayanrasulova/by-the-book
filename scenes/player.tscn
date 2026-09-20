@@ -324,7 +324,7 @@ script = ExtResource("1_qhqgy")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=866879672]
-scale = Vector2(4, 4)
+scale = Vector2(5, 5)
 sprite_frames = SubResource("SpriteFrames_nl2iu")
 animation = &"walk_threeforthback"
 frame_progress = 0.6848114

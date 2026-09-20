@@ -1,17 +1,29 @@
 [gd_scene format=3 uid="uid://3keslax83mdt"]
 
 [ext_resource type="Texture2D" uid="uid://b408an4wiy4co" path="res://assets/backgrounds/kitchen-1-pixel.png" id="1_kbinn"]
+[ext_resource type="Texture2D" uid="uid://b1o3tx4klc3ef" path="res://assets/textures/houselighttexture.png" id="2_3pqac"]
 
 [node name="FirstRoom" type="Node2D" unique_id=670465254]
 
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=30034809]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1610908577]
+modulate = Color(0.56705695, 0.31550902, 0.8814918, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.004111517, 0.00643233, 0.038420834, 0.47843137)
+
 [node name="RoomNode" type="Node2D" parent="." unique_id=601816653]
 
-[node name="ColorRect" type="ColorRect" parent="RoomNode" unique_id=409486976]
+[node name="Background" type="ColorRect" parent="RoomNode" unique_id=409486976]
 offset_right = 1911.0
 offset_bottom = 1079.0
 color = Color(0.3019608, 0.22352941, 0.19215687, 1)
 
-[node name="TextureRect" type="TextureRect" parent="RoomNode" unique_id=1690720730]
+[node name="Room" type="TextureRect" parent="RoomNode" unique_id=1690720730]
 offset_left = 76.0
 offset_top = 40.999996
 offset_right = 1871.0
@@ -20,6 +32,25 @@ rotation = 0.0044723353
 texture = ExtResource("1_kbinn")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="RoomNode" unique_id=1442768226]
+
+[node name="lightsoff" type="PointLight2D" parent="RoomNode/StaticBody2D" unique_id=910272910]
+position = Vector2(48, 53.000004)
+scale = Vector2(1.8807665, 1.8924053)
+color = Color(0.85383797, 0.6089138, 0.19675198, 1)
+energy = 0.45
+blend_mode = 1
+texture = ExtResource("2_3pqac")
+offset = Vector2(319.90344, 256.12628)
+
+[node name="PointLight2D2" type="PointLight2D" parent="RoomNode/StaticBody2D" unique_id=39195122]
+visible = false
+position = Vector2(39, 63)
+scale = Vector2(1.8780903, 1.8474671)
+color = Color(10.092055, 8.107544, 0, 1)
+energy = 0.02
+range_layer_max = 2
+texture = ExtResource("2_3pqac")
+offset = Vector2(320.96832, 256.12628)
 
 [node name="walking distance" type="CollisionPolygon2D" parent="RoomNode/StaticBody2D" unique_id=248756910]
 build_mode = 1
