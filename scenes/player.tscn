@@ -315,12 +315,18 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j2b1d"]
+size = Vector2(98, 120)
+
 [node name="Player" type="Area2D" unique_id=2129005514]
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=866879672]
 scale = Vector2(7, 7)
 sprite_frames = SubResource("SpriteFrames_nl2iu")
-animation = &"walk_threeforthback"
+animation = &"idle_threeforth"
+frame_progress = 0.051056974
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=46140219]
+position = Vector2(0, 25)
+shape = SubResource("RectangleShape2D_j2b1d")
