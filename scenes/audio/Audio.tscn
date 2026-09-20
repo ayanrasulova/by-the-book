@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://d2b2oahsyhehs"]
+
+[ext_resource type="Script" uid="uid://c8evxx00aa4ls" path="res://scripts/main-audio.gd" id="1_paw16"]
+[ext_resource type="AudioStream" uid="uid://bx3otwg6rvs5k" path="res://assets/audio/backgroundbuzz.mp3" id="2_xm5dc"]
+
+[node name="Audio" type="Node2D" unique_id=882438124]
+script = ExtResource("1_paw16")
+
+[node name="AudioListener2D" type="AudioListener2D" parent="." unique_id=1749568568]
+
+[node name="BackgroundBuzz" type="AudioStreamPlayer2D" parent="." unique_id=1145493158]
+stream = ExtResource("2_xm5dc")
+volume_db = -1.944
