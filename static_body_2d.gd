@@ -2,7 +2,7 @@ extends StaticBody2D
 
 var flicker: float = 0.0
 var when_to_flicker: float = 0.0
-var flickering_period: float = 5
+var flickering_period: float = 3.0
 
 var interval: float = 0.0
 
@@ -18,24 +18,34 @@ func _process(delta):
 	flicker += delta
 	when_to_flicker += delta
 	
-	if when_to_flicker >=6: # every 6 seconds
-		flickering_period -= 1
-		while flickering_period > 0:
+	if when_to_flicker >=4: # every 4 seconds
+		if flickering_period > 0:
+			flickering_period -= delta
 			if flicker >= interval:
 				flicker = 0.0
-				light()
+				#lights()
+				lights_but_less_intense()
 				flicker_interval()
-		flickering_period = 10
-		when_to_flicker = 0.0
+		else:
+			$LightsOff.visible = true # lights back off
+			$SadLights.visible = false
+			flickering_period = 1.0
+			when_to_flicker = 0.0
 			
 		
-func light() -> void: 
+func lights() -> void: # alternate lights
 	if $LightsOff.visible==false:
 		$LightsOff.visible=true
 		$SadLights.visible=false
 	else:
 		$LightsOff.visible=false
 		$SadLights.visible=true
+		
+func lights_but_less_intense() -> void:
+	if $SadLights.visible==false:
+		$SadLights.visible=true
+	else:
+		$SadLights.visible=false
 	
 		
 	
