@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://3keslax83mdt"]
 
 [ext_resource type="Texture2D" uid="uid://b408an4wiy4co" path="res://assets/backgrounds/kitchen-1-pixel.png" id="1_kbinn"]
+[ext_resource type="Script" uid="uid://bk7x0vh3kn82s" path="res://scripts/object-interactions.gd" id="2_3pqac"]
 
 [node name="FirstRoom" type="Node2D" unique_id=670465254]
 
@@ -31,4 +32,12 @@ offset_bottom = 1014.0
 rotation = 0.0044723353
 texture = ExtResource("1_kbinn")
 
-[node name="UI" type="Node2D" parent="." unique_id=295159576]
+[node name="Objects" type="Node2D" parent="." unique_id=2117690909]
+script = ExtResource("2_3pqac")
+
+[node name="Fridge" type="Area2D" parent="Objects" unique_id=962923267]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Objects/Fridge" unique_id=890154465]
+position = Vector2(24.160433, -15.768985)
+scale = Vector2(0.9716123, 1.0305746)
+polygon = PackedVector2Array(796, 559, 890.5637, 602.539, 888.5379, 673.24756, 797, 627)
