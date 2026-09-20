@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://3keslax83mdt"]
+
+[ext_resource type="Texture2D" uid="uid://b408an4wiy4co" path="res://assets/backgrounds/kitchen-1-pixel.png" id="1_kbinn"]
+
+[node name="FirstRoom" type="Node2D" unique_id=670465254]
+
+[node name="RoomNode" type="Node2D" parent="." unique_id=601816653]
+
+[node name="ColorRect" type="ColorRect" parent="RoomNode" unique_id=409486976]
+offset_right = 1911.0
+offset_bottom = 1079.0
+color = Color(0.3019608, 0.22352941, 0.19215687, 1)
+
+[node name="TextureRect" type="TextureRect" parent="RoomNode" unique_id=1690720730]
+offset_left = 76.0
+offset_top = 40.999996
+offset_right = 1871.0
+offset_bottom = 1014.0
+rotation = 0.0044723353
+texture = ExtResource("1_kbinn")
+
+[node name="UI" type="Node2D" parent="." unique_id=295159576]
