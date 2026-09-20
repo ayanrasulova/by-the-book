@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://b1o3tx4klc3ef" path="res://assets/textures/houselighttexture.png" id="3_wi6g3"]
 [ext_resource type="Shader" uid="uid://cx0ajatf5td8l" path="res://shaders/sad-lights.gdshader" id="4_ekdwa"]
 [ext_resource type="Shader" uid="uid://4buvhkrvm8g4" path="res://shaders/first-room.gdshader" id="5_otko2"]
-[ext_resource type="AudioStream" uid="uid://bushpfhgfbevj" path="res://assets/audio/flicker.mp3" id="7_ekdwa"]
+[ext_resource type="AudioStream" uid="uid://ykihx72423xw" path="res://assets/audio/flicker2.mp3" id="7_ekdwa"]
 [ext_resource type="PackedScene" uid="uid://d2b2oahsyhehs" path="res://scenes/audio/Audio.tscn" id="7_wi6g3"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hqntj"]
