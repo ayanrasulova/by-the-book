@@ -28,9 +28,15 @@ func movement(delta):
 	
 func animation(delta):
 	if velocity.x !=0:
-		$AnimatedSprite2D.animation = "walk_side"
-		$AnimatedSprite2D.flip_h = velocity.x < 0
-	elif velocity.y < 0:
+		if velocity.y < 0:
+			$AnimatedSprite2D.animation = "walk_threeforthback"
+			$AnimatedSprite2D.flip_h = velocity.x < 0
+		elif velocity.y > 0:	
+			$AnimatedSprite2D.animation = "walk_threeforth"
+		else:
+			$AnimatedSprite2D.animation = "walk_side"
+			$AnimatedSprite2D.flip_h = velocity.x < 0
+	elif velocity.y < 0: 
 		$AnimatedSprite2D.animation = "walk_backward"
 	elif velocity.y > 0:	
 		$AnimatedSprite2D.animation = "walk_forward"

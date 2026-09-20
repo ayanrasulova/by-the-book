@@ -326,8 +326,8 @@ metadata/_edit_group_ = true
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=866879672]
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_nl2iu")
-animation = &"walk_backward"
-frame_progress = 0.60238236
+animation = &"walk_threeforthback"
+frame_progress = 0.154252
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=46140219]
 position = Vector2(0, 25)
