@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed = 400 # speed of player
+@export var speed = 300 # speed of player
 var screen_size
 #var velocity = Vector2.ZERO
 

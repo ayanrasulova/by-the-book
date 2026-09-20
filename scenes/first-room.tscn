@@ -21,7 +21,8 @@ texture = ExtResource("1_kbinn")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="RoomNode" unique_id=1442768226]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RoomNode/StaticBody2D" unique_id=551458744]
-polygon = PackedVector2Array(714, 615, 906, 715, 872, 733, 926, 762, 907, 772, 945, 792, 944, 808, 1120, 724, 1122, 267, 677, 45, 90, 339, 86, 793, 132, 768, 207, 803, 311, 749, 347, 760, 654, 614)
+[node name="walking distance" type="CollisionPolygon2D" parent="RoomNode/StaticBody2D" unique_id=248756910]
+build_mode = 1
+polygon = PackedVector2Array(147, 732, 296, 660, 338, 672, 652, 528, 714, 529, 915, 628, 916, 689, 981, 715, 978, 836, 697, 971, 496, 849, 354, 970, 148, 858)
 
 [node name="UI" type="Node2D" parent="." unique_id=295159576]
