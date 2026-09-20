@@ -47,4 +47,5 @@ func _ready():
 func _process(delta):
 	movement(delta)
 	animation(delta)
+	move_and_slide()
 	
