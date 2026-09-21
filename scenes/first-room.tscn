@@ -47,7 +47,7 @@ position = Vector2(23, 9)
 scale = Vector2(0.9716123, 1.0305746)
 polygon = PackedVector2Array(796, 559, 890.5637, 602.539, 888.5379, 673.24756, 797, 627)
 
-[node name="LightsOff" type="PointLight2D" parent="Objects/Fridge" unique_id=1232376411]
+[node name="PointLight2D" type="PointLight2D" parent="Objects/Fridge" unique_id=1232376411]
 modulate = Color(0.72, 0.10079999, 0.111119844, 1)
 top_level = true
 position = Vector2(798.06067, 397.8763)
@@ -66,3 +66,16 @@ offset = Vector2(31.619537, -32.424713)
 position = Vector2(623, 657)
 scale = Vector2(0.71743274, 0.9754886)
 polygon = PackedVector2Array(-85.03198, -63.311157, 38.940186, -103.59076, 37.886047, -41.73419, -85.11328, 0.972229)
+
+[node name="PointLight2D" type="PointLight2D" parent="Objects/Soup" unique_id=817139242]
+modulate = Color(0.72, 0.10079999, 0.111119844, 1)
+top_level = true
+position = Vector2(649.1786, 609.2672)
+rotation = -1.5707964
+scale = Vector2(-1.752685, -1.4527111)
+skew = -0.40317106
+color = Color(1.129879, 0.85852426, 0.27296928, 1)
+energy = 0.15
+range_layer_max = 2
+texture = SubResource("GradientTexture2D_3pqac")
+offset = Vector2(-31.986984, 32)

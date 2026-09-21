@@ -8,6 +8,8 @@ var current_obj: Area2D = null
 @onready var player_area: Area2D = $Area2D # add area 2d to player
 
 
+
+
 func is_interactable_check():
 	player_area.area_entered.connect(enter_area)
 	player_area.area_exited.connect(leave_area)
@@ -17,10 +19,12 @@ func enter_area(area):
 	
 	if obj is Interactable: # if member of interactable class (obj)
 		current_obj = area
+		area.get_node("PointLight2D").visible = true 
 		print("Interact with ", current_obj.name, " by pressing E")
 		
 func leave_area(area):
 	if area == current_obj:
+		area.get_node("PointLight2D").visible = false 
 		current_obj = null
 
 func _input(event):
