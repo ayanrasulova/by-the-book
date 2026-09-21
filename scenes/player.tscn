@@ -319,6 +319,10 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j2b1d"]
 size = Vector2(98, 120)
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pnnds"]
+radius = 9.63654
+height = 78.90198
+
 [node name="Player" type="CharacterBody2D" unique_id=855111403]
 script = ExtResource("1_qhqgy")
 metadata/_edit_group_ = true
@@ -336,3 +340,6 @@ shape = SubResource("RectangleShape2D_j2b1d")
 [node name="Area2D" type="Area2D" parent="." unique_id=94491982]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1982357575]
+position = Vector2(1.1920929e-07, 26)
+scale = Vector2(-5.0651755, 1.4955267)
+shape = SubResource("CapsuleShape2D_pnnds")
