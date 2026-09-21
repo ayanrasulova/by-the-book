@@ -5,4 +5,6 @@ extends Node2D
 
 func interact(player):
 	if $Area2D.name == "Fridge":
-		print("opened the fridge")
+		print("opened the fridge..")
+	if $Area2D.name == "Soup":
+		print("making soup..")

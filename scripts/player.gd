@@ -2,7 +2,29 @@ extends CharacterBody2D
 
 @export var speed = 200 # speed of player
 var screen_size
-#var velocity = Vector2.ZERO
+
+var can_interact = "true"
+var current_obj: Interactable = null
+@onready var player_area: Area2D = $Area2D # add area 2d to player
+
+
+func is_interactable_check():
+	player_area.area_entered.connect(enter_area)
+	player_area.area_exited.connect(leave_area)
+	
+func enter_area(area):
+	if area is Interactable: # if member of interactable class (obj)
+		current_obj = area
+		print("interact with", current_obj, "by pressing E")
+		
+func leave_area(area):
+	if area == current_obj:
+		current_obj = null
+
+func _input(event):
+	if current_obj and event.is_action_pressed("interact"):
+		current_obj.interact(self)
+	
 
 func movement(delta):
 	velocity = Vector2.ZERO # movement vector by default zero
@@ -43,6 +65,7 @@ func animation(delta):
 
 func _ready():
 	screen_size = get_viewport_rect().size
+	is_interactable_check()
 	
 func _process(delta):
 	movement(delta)

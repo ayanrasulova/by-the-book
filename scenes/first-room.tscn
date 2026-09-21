@@ -41,3 +41,10 @@ script = ExtResource("2_3pqac")
 position = Vector2(24.160433, -15.768985)
 scale = Vector2(0.9716123, 1.0305746)
 polygon = PackedVector2Array(796, 559, 890.5637, 602.539, 888.5379, 673.24756, 797, 627)
+
+[node name="Soup" type="Area2D" parent="Objects" unique_id=2112166101]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Objects/Soup" unique_id=221943941]
+position = Vector2(622.06305, 628.0516)
+scale = Vector2(0.71743274, 0.9754886)
+polygon = PackedVector2Array(-85.03198, -63.311157, 38.940186, -103.59076, 37.886047, -41.73419, -85.11328, 0.972229)
