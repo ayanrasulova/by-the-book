@@ -3,8 +3,8 @@ extends Node2D
 
 @export var prompt_message: String = "Interact"
 
-func interact(player):
-	if $Area2D.name == "Fridge":
-		print("opened the fridge..")
-	if $Area2D.name == "Soup":
-		print("making soup..")
+func interact(object):
+	if object.name == "Fridge":
+		print("Opened the fridge..")
+	if object.name == "Soup":
+		print("Making soup..")

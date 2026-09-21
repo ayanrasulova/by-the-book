@@ -4,7 +4,7 @@ extends CharacterBody2D
 var screen_size
 
 var can_interact = "true"
-var current_obj: Interactable = null
+var current_obj: Area2D = null
 @onready var player_area: Area2D = $Area2D # add area 2d to player
 
 
@@ -13,9 +13,11 @@ func is_interactable_check():
 	player_area.area_exited.connect(leave_area)
 	
 func enter_area(area):
-	if area is Interactable: # if member of interactable class (obj)
+	var obj = area.get_parent() # objects node is what is set as interactable
+	
+	if obj is Interactable: # if member of interactable class (obj)
 		current_obj = area
-		print("interact with", current_obj, "by pressing E")
+		print("Interact with ", current_obj.name, " by pressing E")
 		
 func leave_area(area):
 	if area == current_obj:
@@ -23,7 +25,7 @@ func leave_area(area):
 
 func _input(event):
 	if current_obj and event.is_action_pressed("interact"):
-		current_obj.interact(self)
+		current_obj.get_parent().interact(current_obj) # called on parent object w/ script.. all interactions handled there
 	
 
 func movement(delta):

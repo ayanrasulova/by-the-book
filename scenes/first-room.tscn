@@ -2,6 +2,11 @@
 
 [ext_resource type="Texture2D" uid="uid://b408an4wiy4co" path="res://assets/backgrounds/kitchen-1-pixel.png" id="1_kbinn"]
 [ext_resource type="Script" uid="uid://bk7x0vh3kn82s" path="res://scripts/object-interactions.gd" id="2_3pqac"]
+[ext_resource type="Gradient" uid="uid://6ha7871lhhjo" path="res://assets/textures/new_gradient.tres" id="3_kjgur"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_3pqac"]
+gradient = ExtResource("3_kjgur")
+fill = 2
 
 [node name="FirstRoom" type="Node2D" unique_id=670465254]
 
@@ -41,6 +46,19 @@ script = ExtResource("2_3pqac")
 position = Vector2(23, 9)
 scale = Vector2(0.9716123, 1.0305746)
 polygon = PackedVector2Array(796, 559, 890.5637, 602.539, 888.5379, 673.24756, 797, 627)
+
+[node name="LightsOff" type="PointLight2D" parent="Objects/Fridge" unique_id=1232376411]
+modulate = Color(0.72, 0.10079999, 0.111119844, 1)
+top_level = true
+position = Vector2(798.06067, 397.8763)
+rotation = -1.5707964
+scale = Vector2(-4.0947385, -1.4711393)
+skew = 0.4660029
+color = Color(1.129879, 0.85852426, 0.27296928, 1)
+energy = 0.15
+range_layer_max = 2
+texture = SubResource("GradientTexture2D_3pqac")
+offset = Vector2(31.619537, -32.424713)
 
 [node name="Soup" type="Area2D" parent="Objects" unique_id=2112166101]
 
