@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bx7mioxcgwyg3"]
+
+[ext_resource type="Texture2D" uid="uid://bgvhkwltuv4oo" path="res://assets/textures/recipe.png" id="1_dj8aq"]
+
+[node name="Ui" type="Control" unique_id=805446961]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="." unique_id=634328943]
+anchors_preset = 0
+offset_left = 904.0
+offset_right = 944.00006
+offset_bottom = 39.999992
+scale = Vector2(26.556564, 15.292424)
+
+[node name="Recipe" type="Sprite2D" parent="." unique_id=1738402498]
+modulate = Color(0.6253301, 0.67702544, 0.77566814, 1)
+position = Vector2(1496, 328.00003)
+scale = Vector2(0.6956937, 0.7611068)
+texture = ExtResource("1_dj8aq")

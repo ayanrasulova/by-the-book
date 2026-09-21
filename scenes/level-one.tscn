@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://c67vaaf8qa2xn"]
 
+[ext_resource type="Texture2D" uid="uid://cefukwe3o1d5e" path="res://assets/textures/bluebackground.png" id="1_hqntj"]
 [ext_resource type="PackedScene" uid="uid://3keslax83mdt" path="res://scenes/first-room.tscn" id="1_ooxff"]
 [ext_resource type="PackedScene" uid="uid://fok5o36d2qtq" path="res://scenes/player.tscn" id="2_7yhom"]
 [ext_resource type="Script" uid="uid://dhj6uiq43lo6g" path="res://static_body_2d.gd" id="2_ff0gm"]
@@ -8,6 +9,7 @@
 [ext_resource type="Shader" uid="uid://4buvhkrvm8g4" path="res://shaders/first-room.gdshader" id="5_otko2"]
 [ext_resource type="AudioStream" uid="uid://ykihx72423xw" path="res://assets/audio/flicker2.mp3" id="7_ekdwa"]
 [ext_resource type="PackedScene" uid="uid://d2b2oahsyhehs" path="res://scenes/audio/Audio.tscn" id="7_wi6g3"]
+[ext_resource type="PackedScene" uid="uid://bx7mioxcgwyg3" path="res://scenes/UI.tscn" id="9_otko2"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hqntj"]
 shader = ExtResource("4_ekdwa")
@@ -19,15 +21,27 @@ shader_parameter/multiply_opacity = 0.4410000209475
 
 [node name="LevelOne" type="Node2D" unique_id=501430909]
 
-[node name="FirstRoom" parent="." unique_id=670465254 instance=ExtResource("1_ooxff")]
+[node name="Background" type="ColorRect" parent="." unique_id=1866155599]
+offset_right = 1911.0
+offset_bottom = 1079.0
+color = Color(0.3118149, 0.4248285, 0.53422683, 1)
 
-[node name="Player" parent="." unique_id=2129005514 instance=ExtResource("2_7yhom")]
-position = Vector2(655, 686)
+[node name="Bluebackground" type="Sprite2D" parent="." unique_id=624418102]
+modulate = Color(0.8848981, 0.8848981, 0.8848981, 0.32000002)
+position = Vector2(-3, 1)
+scale = Vector2(1.2810318, 1.152933)
+texture = ExtResource("1_hqntj")
+offset = Vector2(748.786, 468.5441)
 
-[node name="FlickerAmbience" type="StaticBody2D" parent="." unique_id=1382824982]
+[node name="Room" type="Node2D" parent="." unique_id=921435291]
+position = Vector2(-28, 8)
+
+[node name="FirstRoom" parent="Room" unique_id=670465254 instance=ExtResource("1_ooxff")]
+
+[node name="FlickerAmbience" type="StaticBody2D" parent="Room" unique_id=1382824982]
 script = ExtResource("2_ff0gm")
 
-[node name="LightsOff" type="PointLight2D" parent="FlickerAmbience" unique_id=1018010813]
+[node name="LightsOff" type="PointLight2D" parent="Room/FlickerAmbience" unique_id=1018010813]
 position = Vector2(48, 48)
 scale = Vector2(1.8837416, 1.9000003)
 color = Color(1.129879, 0.85852426, 0.27296928, 1)
@@ -37,7 +51,7 @@ range_item_cull_mask = 3
 texture = ExtResource("3_wi6g3")
 offset = Vector2(319.9607, 256.89233)
 
-[node name="LightsOffDarker" type="PointLight2D" parent="FlickerAmbience" unique_id=1302830495]
+[node name="LightsOffDarker" type="PointLight2D" parent="Room/FlickerAmbience" unique_id=1302830495]
 visible = false
 position = Vector2(48, 53.000004)
 scale = Vector2(1.8807665, 1.8924053)
@@ -47,7 +61,7 @@ blend_mode = 1
 texture = ExtResource("3_wi6g3")
 offset = Vector2(319.90344, 256.12628)
 
-[node name="SadLights" type="Sprite2D" parent="FlickerAmbience" unique_id=691506511]
+[node name="SadLights" type="Sprite2D" parent="Room/FlickerAmbience" unique_id=691506511]
 visible = false
 modulate = Color(0.89, 0.62522495, 0.13349998, 0.22745098)
 self_modulate = Color(0.9599507, 0.71623427, 0.046014052, 0.09019608)
@@ -57,7 +71,7 @@ scale = Vector2(1.8826164, 1.8925035)
 texture = ExtResource("3_wi6g3")
 offset = Vector2(320, 258)
 
-[node name="WarmLights" type="Sprite2D" parent="FlickerAmbience" unique_id=679769873]
+[node name="WarmLights" type="Sprite2D" parent="Room/FlickerAmbience" unique_id=679769873]
 visible = false
 modulate = Color(0.89, 0.62522495, 0.13349998, 0.22745098)
 self_modulate = Color(0.9599507, 0.71623427, 0.046014052, 0.09019608)
@@ -67,11 +81,16 @@ scale = Vector2(1.8773161, 1.8582307)
 texture = ExtResource("3_wi6g3")
 offset = Vector2(320, 258)
 
-[node name="walking distance" type="CollisionPolygon2D" parent="FlickerAmbience" unique_id=1968361926]
+[node name="walking distance" type="CollisionPolygon2D" parent="Room/FlickerAmbience" unique_id=1968361926]
 build_mode = 1
 polygon = PackedVector2Array(147, 732, 296, 660, 338, 672, 652, 528, 714, 529, 915, 628, 916, 689, 981, 715, 978, 823, 691, 963, 506, 865, 346, 950, 149, 845)
 
-[node name="FlickerAudio" type="AudioStreamPlayer2D" parent="FlickerAmbience" unique_id=1229729109]
+[node name="FlickerAudio" type="AudioStreamPlayer2D" parent="Room/FlickerAmbience" unique_id=1229729109]
 stream = ExtResource("7_ekdwa")
 
+[node name="Player" parent="." unique_id=2129005514 instance=ExtResource("2_7yhom")]
+position = Vector2(640, 698)
+
 [node name="Audio" parent="." unique_id=882438124 instance=ExtResource("7_wi6g3")]
+
+[node name="Ui" parent="." unique_id=805446961 instance=ExtResource("9_otko2")]

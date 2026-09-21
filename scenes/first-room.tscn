@@ -10,21 +10,10 @@ fill = 2
 
 [node name="FirstRoom" type="Node2D" unique_id=670465254]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=30034809]
-
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1610908577]
-visible = false
-modulate = Color(0.56705695, 0.31550902, 0.8814918, 1)
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.004111517, 0.00643233, 0.038420834, 0.47843137)
-
 [node name="RoomNode" type="Node2D" parent="." unique_id=601816653]
 
 [node name="Background" type="ColorRect" parent="RoomNode" unique_id=409486976]
+visible = false
 offset_right = 1911.0
 offset_bottom = 1079.0
 color = Color(1.8049032e-08, 0.09447531, 0.1741511, 1)
@@ -50,7 +39,6 @@ polygon = PackedVector2Array(796, 559, 890.5637, 602.539, 888.5379, 673.24756, 7
 [node name="PointLight2D" type="PointLight2D" parent="Objects/Fridge" unique_id=1232376411]
 visible = false
 modulate = Color(0.72, 0.10079999, 0.111119844, 1)
-top_level = true
 position = Vector2(798.06067, 397.8763)
 rotation = -1.5707964
 scale = Vector2(-4.0947385, -1.4711393)
@@ -71,7 +59,6 @@ polygon = PackedVector2Array(-85.03198, -63.311157, 38.940186, -103.59076, 37.88
 [node name="PointLight2D" type="PointLight2D" parent="Objects/Soup" unique_id=817139242]
 visible = false
 modulate = Color(0.72, 0.10079999, 0.111119844, 1)
-top_level = true
 position = Vector2(649.1786, 609.2672)
 rotation = -1.5707964
 scale = Vector2(-1.752685, -1.4527111)
