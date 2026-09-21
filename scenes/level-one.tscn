@@ -33,6 +33,7 @@ scale = Vector2(1.8837416, 1.9000003)
 color = Color(1.129879, 0.85852426, 0.27296928, 1)
 energy = 0.45
 blend_mode = 1
+range_item_cull_mask = 3
 texture = ExtResource("3_wi6g3")
 offset = Vector2(319.9607, 256.89233)
 
