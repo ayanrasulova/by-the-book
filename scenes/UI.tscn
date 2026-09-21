@@ -15,10 +15,18 @@ anchors_preset = 0
 offset_left = 904.0
 offset_right = 944.00006
 offset_bottom = 39.999992
-scale = Vector2(26.556564, 15.292424)
+scale = Vector2(25.376951, 26.9884)
 
-[node name="Recipe" type="Sprite2D" parent="." unique_id=1738402498]
+[node name="Recipe" type="Sprite2D" parent="Control" unique_id=1738402498]
 modulate = Color(0.6253301, 0.67702544, 0.77566814, 1)
-position = Vector2(1496, 328.00003)
-scale = Vector2(0.6956937, 0.7611068)
+position = Vector2(22.171795, 10.7993355)
+scale = Vector2(0.026055371, 0.025059287)
 texture = ExtResource("1_dj8aq")
+
+[node name="Control2" type="Control" parent="." unique_id=456759252]
+anchors_preset = 0
+offset_left = 1168.0
+offset_top = 544.0
+offset_right = 1208.0
+offset_bottom = 584.0
+scale = Vector2(15.45454, 12.163766)

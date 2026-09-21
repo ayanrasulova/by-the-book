@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://4loltwf0rf6r"
+path="res://.godot/imported/openingroom1.dialogue-76e2902fb64ab9cd692223f00f02a3f3.tres"
+
+[deps]
+
+source_file="res://dialogue/openingroom1.dialogue"
+dest_files=["res://.godot/imported/openingroom1.dialogue-76e2902fb64ab9cd692223f00f02a3f3.tres"]
+
+[params]
+
+defaults=true
