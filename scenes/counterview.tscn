@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://bx7mioxcgwyg3"]
+
+[ext_resource type="Texture2D" uid="uid://masvqtrougff" path="res://assets/textures/pixelcounter.png" id="1_ro3t7"]
+
+[node name="Ui" type="Control" unique_id=805446961]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=36374221]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=1266859590]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="EmptyRect" type="ColorRect" parent="CanvasLayer/Control" unique_id=412218885]
+layout_mode = 0
+offset_left = 1016.0
+offset_top = 496.0
+offset_right = 1023.99994
+offset_bottom = 1576.0
+rotation = -1.5707964
+scale = Vector2(69.14065, 0.8292794)
+pivot_offset = Vector2(8.459671, -0.510376)
+color = Color(0.18039216, 0.22745098, 0.3647059, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control" unique_id=278405366]
+layout_mode = 0
+offset_left = 1024.0
+offset_right = 1064.0
+offset_bottom = 40.0
+scale = Vector2(22.399899, 26.732676)
+
+[node name="Granite" type="TextureRect" parent="CanvasLayer/Control/VBoxContainer" unique_id=1824924823]
+modulate = Color(0.6629296, 0.6629296, 0.7313913, 1)
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(-8.775, 7.11)
+offset_transform_position_ratio = Vector2(0.045, 0)
+offset_transform_scale = Vector2(2.375, 1.703)
+texture = ExtResource("1_ro3t7")
+expand_mode = 5
+
+[node name="SideBar" type="ColorRect" parent="CanvasLayer/Control" unique_id=1093908246]
+visible = false
+layout_mode = 0
+offset_left = 1026.9999
+offset_right = 1034.9999
+offset_bottom = 1080.0
+scale = Vector2(0.5250754, 0.99991435)
+color = Color(0.36976233, 0.36976233, 0.36976233, 1)
+
+[node name="MidBarDark" type="ColorRect" parent="CanvasLayer/Control" unique_id=116572467]
+visible = false
+layout_mode = 0
+offset_left = 1024.0001
+offset_top = 552.0
+offset_right = 1032.0001
+offset_bottom = 1632.0
+rotation = -1.5707964
+scale = Vector2(0.5099932, 0.82965475)
+color = Color(0.1628, 0.17519332, 0.22, 1)
+
+[node name="SideBarDark" type="ColorRect" parent="CanvasLayer/Control" unique_id=1861156960]
+layout_mode = 0
+offset_left = 1024.0
+offset_right = 1032.0
+offset_bottom = 1080.0
+scale = Vector2(0.5250754, 0.99991435)
+color = Color(0.03322228, 0.03772443, 0.055274256, 1)

@@ -9,7 +9,7 @@
 [ext_resource type="Shader" uid="uid://4buvhkrvm8g4" path="res://shaders/first-room.gdshader" id="5_otko2"]
 [ext_resource type="AudioStream" uid="uid://ykihx72423xw" path="res://assets/audio/flicker2.mp3" id="7_ekdwa"]
 [ext_resource type="PackedScene" uid="uid://d2b2oahsyhehs" path="res://scenes/audio/Audio.tscn" id="7_wi6g3"]
-[ext_resource type="PackedScene" uid="uid://bx7mioxcgwyg3" path="res://scenes/UI.tscn" id="9_otko2"]
+[ext_resource type="PackedScene" uid="uid://bx7mioxcgwyg3" path="res://scenes/counterview.tscn" id="9_otko2"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hqntj"]
 shader = ExtResource("4_ekdwa")
@@ -34,9 +34,14 @@ texture = ExtResource("1_hqntj")
 offset = Vector2(748.786, 468.5441)
 
 [node name="Room" type="Node2D" parent="." unique_id=921435291]
-position = Vector2(-28, 8)
+position = Vector2(-60, 96)
+scale = Vector2(0.9473173, 0.94596803)
 
 [node name="FirstRoom" parent="Room" unique_id=670465254 instance=ExtResource("1_ooxff")]
+
+[node name="Player" parent="Room" unique_id=2129005514 instance=ExtResource("2_7yhom")]
+position = Vector2(738.9288, 636.38513)
+scale = Vector2(1.0556126, 1.0571182)
 
 [node name="FlickerAmbience" type="StaticBody2D" parent="Room" unique_id=1382824982]
 script = ExtResource("2_ff0gm")
@@ -87,9 +92,6 @@ polygon = PackedVector2Array(147, 732, 296, 660, 338, 672, 652, 528, 714, 529, 9
 
 [node name="FlickerAudio" type="AudioStreamPlayer2D" parent="Room/FlickerAmbience" unique_id=1229729109]
 stream = ExtResource("7_ekdwa")
-
-[node name="Player" parent="." unique_id=2129005514 instance=ExtResource("2_7yhom")]
-position = Vector2(640, 698)
 
 [node name="Audio" parent="." unique_id=882438124 instance=ExtResource("7_wi6g3")]
 
