@@ -34,7 +34,7 @@ texture = ExtResource("1_hqntj")
 offset = Vector2(748.786, 468.5441)
 
 [node name="Room" type="Node2D" parent="." unique_id=921435291]
-position = Vector2(-60, 96)
+position = Vector2(5, 47)
 scale = Vector2(0.9473173, 0.94596803)
 
 [node name="FirstRoom" parent="Room" unique_id=670465254 instance=ExtResource("1_ooxff")]

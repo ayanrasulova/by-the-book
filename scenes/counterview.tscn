@@ -22,21 +22,21 @@ grow_vertical = 2
 
 [node name="EmptyRect" type="ColorRect" parent="CanvasLayer/Control" unique_id=412218885]
 layout_mode = 0
-offset_left = 1016.0
-offset_top = 496.0
-offset_right = 1023.99994
-offset_bottom = 1576.0
+offset_left = 1143.9999
+offset_top = 496.00012
+offset_right = 1151.9998
+offset_bottom = 1576.0001
 rotation = -1.5707964
-scale = Vector2(69.14065, 0.8292794)
+scale = Vector2(69.14065, 0.7102381)
 pivot_offset = Vector2(8.459671, -0.510376)
 color = Color(0.18039216, 0.22745098, 0.3647059, 1)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control" unique_id=278405366]
 layout_mode = 0
-offset_left = 1024.0
-offset_right = 1064.0
+offset_left = 1152.0
+offset_right = 1192.0
 offset_bottom = 40.0
-scale = Vector2(22.399899, 26.732676)
+scale = Vector2(19.153685, 27.033504)
 
 [node name="Granite" type="TextureRect" parent="CanvasLayer/Control/VBoxContainer" unique_id=1824924823]
 modulate = Color(0.6629296, 0.6629296, 0.7313913, 1)
@@ -70,8 +70,8 @@ color = Color(0.1628, 0.17519332, 0.22, 1)
 
 [node name="SideBarDark" type="ColorRect" parent="CanvasLayer/Control" unique_id=1861156960]
 layout_mode = 0
-offset_left = 1024.0
-offset_right = 1032.0
+offset_left = 1152.0001
+offset_right = 1160.0001
 offset_bottom = 1080.0
-scale = Vector2(0.5250754, 0.99991435)
+scale = Vector2(0.27762693, 1.0217214)
 color = Color(0.03322228, 0.03772443, 0.055274256, 1)
