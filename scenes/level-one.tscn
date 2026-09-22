@@ -44,14 +44,15 @@ texture = ExtResource("1_hqntj")
 offset = Vector2(748.786, 468.5441)
 
 [node name="Room" type="Node2D" parent="." unique_id=921435291]
-position = Vector2(5, 47)
-scale = Vector2(0.9473173, 0.94596803)
+position = Vector2(-33, 4)
+scale = Vector2(1.0031782, 1.0214161)
 
 [node name="FirstRoom" parent="Room" unique_id=670465254 instance=ExtResource("1_ooxff")]
 
 [node name="Player" parent="Room" unique_id=2129005514 instance=ExtResource("2_7yhom")]
-position = Vector2(738.9288, 636.38513)
-scale = Vector2(1.0556126, 1.0571182)
+position = Vector2(682.8297, 721.5473)
+scale = Vector2(0.845, 0.845)
+speed = 160
 
 [node name="FlickerAmbience" type="StaticBody2D" parent="Room" unique_id=1382824982]
 script = ExtResource("2_ff0gm")

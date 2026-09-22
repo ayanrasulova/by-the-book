@@ -347,9 +347,14 @@ scale = Vector2(-5.0651755, 1.4955267)
 shape = SubResource("CapsuleShape2D_pnnds")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=637707237]
-position = Vector2(318, -2)
-scale = Vector2(0.8052806, 0.7702925)
-zoom = Vector2(1.37, 1.37)
-limit_left = -70
+position = Vector2(0.9999695, 7)
+scale = Vector2(-11105.205, -4.2030883)
+offset = Vector2(215.535, -11.46)
+zoom = Vector2(1.345, 1.345)
+limit_left = -240
+limit_right = 1538
+limit_bottom = 1027
 position_smoothing_enabled = true
 position_smoothing_speed = 8.29
+drag_left_margin = 1.0
+drag_right_margin = 1.0
