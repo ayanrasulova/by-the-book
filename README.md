@@ -9,4 +9,3 @@ I wanted the story to follow along multiple generations of recipes "passed on" w
 credits
 
 environment assets - pixel room creator (by RainWinther)
-ui - Complete UI Book Styles Pack [Aseprite, Spritesheet] - crusenho
