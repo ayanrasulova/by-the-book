@@ -21,13 +21,23 @@ shader_parameter/multiply_opacity = 0.4410000209475
 
 [node name="LevelOne" type="Node2D" unique_id=501430909]
 
-[node name="Background" type="ColorRect" parent="." unique_id=1866155599]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2102208063]
+layer = -2
+
+[node name="Background" type="ColorRect" parent="CanvasLayer" unique_id=1866155599]
+self_modulate = Color(0.008202022, 0.008202025, 0.008202025, 1)
+offset_right = 1911.0
+offset_bottom = 1079.0
+color = Color(0, 0, 0, 1)
+
+[node name="Background2" type="ColorRect" parent="CanvasLayer" unique_id=232777327]
+visible = false
 offset_right = 1911.0
 offset_bottom = 1079.0
 color = Color(0.3118149, 0.4248285, 0.53422683, 1)
 
-[node name="Bluebackground" type="Sprite2D" parent="." unique_id=624418102]
-modulate = Color(0.8848981, 0.8848981, 0.8848981, 0.32000002)
+[node name="Bluebackground" type="Sprite2D" parent="CanvasLayer" unique_id=624418102]
+modulate = Color(0.51466626, 0.51466626, 0.51466626, 0.469)
 position = Vector2(-3, 1)
 scale = Vector2(1.2810318, 1.152933)
 texture = ExtResource("1_hqntj")
