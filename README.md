@@ -8,4 +8,6 @@ I wanted the story to follow along multiple generations of recipes "passed on" w
 
 credits
 
-environment assets - pixel room creator (by RainWinther)
+environment assets - used pixel room creator (by RainWinther), rooms created by me
+other art and assets created by me
+programmed by me
