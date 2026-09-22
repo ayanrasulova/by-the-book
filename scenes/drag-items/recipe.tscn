@@ -1,3 +1,9 @@
 [gd_scene format=3 uid="uid://d2gafpq7rsnlr"]
 
+[ext_resource type="Texture2D" uid="uid://bgvhkwltuv4oo" path="res://assets/textures/recipe.png" id="1_07bdt"]
+
 [node name="Recipe" type="Node2D" unique_id=1472405004]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1482183071]
+position = Vector2(584, 312)
+texture = ExtResource("1_07bdt")
