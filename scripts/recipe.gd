@@ -38,10 +38,8 @@ func _input(event):
 func is_mouse_over_recipe() -> bool:
 	var sprite = $Sprite2D
 
-	# Convert the mouse position into the Sprite2D's local coordinates.
 	var mouse_local = sprite.to_local(get_global_mouse_position())
 
-	# Get the Sprite2D's actual texture rectangle.
 	var sprite_rect = sprite.get_rect()
 
 	return sprite_rect.has_point(mouse_local)
