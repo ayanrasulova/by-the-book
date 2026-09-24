@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://bx7mioxcgwyg3"]
 
 [ext_resource type="Texture2D" uid="uid://dap5v5b5csbjh" path="res://assets/textures/newgranite.png" id="1_miyf1"]
+[ext_resource type="PackedScene" uid="uid://d2gafpq7rsnlr" path="res://scenes/drag-items/recipe.tscn" id="2_o15ma"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3qwlr"]
+size = Vector2(10.455485, 16.305923)
 
 [node name="Ui" type="Control" unique_id=805446961]
 layout_mode = 3
@@ -29,7 +33,7 @@ offset_bottom = 1016.0
 rotation = -1.5707964
 scale = Vector2(142.13376, 0.7403859)
 pivot_offset = Vector2(8.459671, -0.510376)
-color = Color(0.05188659, 0.07366767, 0.13746613, 1)
+color = Color(0.11646146, 0.15426141, 0.2549349, 1)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control" unique_id=278405366]
 layout_mode = 0
@@ -47,31 +51,23 @@ offset_transform_scale = Vector2(2.375, 1.703)
 texture = ExtResource("1_miyf1")
 expand_mode = 5
 
-[node name="SideBar" type="ColorRect" parent="CanvasLayer/Control" unique_id=1093908246]
-visible = false
-layout_mode = 0
-offset_left = 1026.9999
-offset_right = 1034.9999
-offset_bottom = 1080.0
-scale = Vector2(0.5250754, 0.99991435)
-color = Color(0.36976233, 0.36976233, 0.36976233, 1)
+[node name="CounterDragArea" type="Area2D" parent="CanvasLayer/Control" unique_id=552917757]
+position = Vector2(1152, 0)
+scale = Vector2(58.16953, -506.54263)
 
-[node name="MidBarDark" type="ColorRect" parent="CanvasLayer/Control" unique_id=116572467]
-visible = false
-layout_mode = 0
-offset_left = 1024.0001
-offset_top = 552.0
-offset_right = 1032.0001
-offset_bottom = 1632.0
-rotation = -1.5707964
-scale = Vector2(0.5099932, 0.82965475)
-color = Color(0.1628, 0.17519332, 0.22, 1)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Control/CounterDragArea" unique_id=1791556400]
+position = Vector2(6.532631, -0.5053869)
+scale = Vector2(1.2496083, 0.061988145)
+shape = SubResource("RectangleShape2D_3qwlr")
+
+[node name="Recipe" parent="CanvasLayer/Control" unique_id=1600319047 instance=ExtResource("2_o15ma")]
+position = Vector2(1392, 159.99998)
+scale = Vector2(0.40320295, 0.40320292)
 
 [node name="SideBarDark" type="ColorRect" parent="CanvasLayer/Control" unique_id=1861156960]
-visible = false
 layout_mode = 0
-offset_left = 1152.0001
-offset_right = 1160.0001
+offset_left = 1144.0
+offset_right = 1152.0
 offset_bottom = 1080.0
-scale = Vector2(0.27762693, 1.0217214)
+scale = Vector2(-0.98501736, 1.0229485)
 color = Color(0.03322228, 0.03772443, 0.055274256, 1)

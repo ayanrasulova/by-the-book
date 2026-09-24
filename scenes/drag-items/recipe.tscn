@@ -1,9 +1,17 @@
 [gd_scene format=3 uid="uid://d2gafpq7rsnlr"]
 
+[ext_resource type="Script" uid="uid://bdcewaxodton6" path="res://scripts/recipe.gd" id="1_3qwlr"]
 [ext_resource type="Texture2D" uid="uid://bgvhkwltuv4oo" path="res://assets/textures/recipe.png" id="1_07bdt"]
 
-[node name="Recipe" type="Node2D" unique_id=1472405004]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3qwlr"]
+size = Vector2(25.751135, 23.51084)
+
+[node name="Recipe" type="Area2D" unique_id=1600319047]
+script = ExtResource("1_3qwlr")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1482183071]
-position = Vector2(584, 312)
 texture = ExtResource("1_07bdt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1191266175]
+scale = Vector2(38.44491, -27.731888)
+shape = SubResource("RectangleShape2D_3qwlr")
