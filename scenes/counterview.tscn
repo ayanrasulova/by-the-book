@@ -60,10 +60,6 @@ position = Vector2(6.532631, -0.5053869)
 scale = Vector2(1.2496083, 0.061988145)
 shape = SubResource("RectangleShape2D_3qwlr")
 
-[node name="Recipe" parent="CanvasLayer/Control" unique_id=1600319047 instance=ExtResource("2_o15ma")]
-position = Vector2(1392, 159.99998)
-scale = Vector2(0.40320295, 0.40320292)
-
 [node name="SideBarDark" type="ColorRect" parent="CanvasLayer/Control" unique_id=1861156960]
 layout_mode = 0
 offset_left = 1144.0
@@ -71,3 +67,7 @@ offset_right = 1152.0
 offset_bottom = 1080.0
 scale = Vector2(-0.98501736, 1.0229485)
 color = Color(0.03322228, 0.03772443, 0.055274256, 1)
+
+[node name="Recipe" parent="CanvasLayer/Control" unique_id=1600319047 instance=ExtResource("2_o15ma")]
+position = Vector2(1472, 192)
+scale = Vector2(0.2657003, 0.26570028)
