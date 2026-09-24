@@ -32,7 +32,7 @@ func _input(event):
 		if dragging:
 			var mouse_position = get_global_mouse_position()
 
-			global_position = mouse_position + drag_offset
+			global_position = mouse_position + drag_offset 
 
 
 func is_mouse_over_recipe() -> bool:
