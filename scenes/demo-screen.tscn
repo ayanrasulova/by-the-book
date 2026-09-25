@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cqgtcbt8cusjx"]
+
+[node name="DemoScreen" type="Node2D" unique_id=31856260]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=519534548]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(48.145947, 27.132648)
+color = Color(0.029506557, 0.029506557, 0.029506557, 1)
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=1593726158]
+offset_right = 8.0
+offset_bottom = 8.0
+scale = Vector2(2.7927613, 2.4771478)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "this is the demo!! i know it is really short but the intention was for the pass it on to be passing on recipes 
+
+I wanted the story to follow along multiple generations of recipes \"passed on\" w/ levels getting progressively harder as knowledge is lost you must find missing gaps via non written methods
+
+in the future i would add more sound effects, more mechanics (like chopping boards, different forms of ingredients, etc.)
+
+credits
+
+environment assets - used pixel room creator (by RainWinther), rooms created by me other art and assets created by me programmed by me"

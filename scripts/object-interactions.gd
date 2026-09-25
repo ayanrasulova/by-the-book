@@ -24,3 +24,9 @@ func open_stove():
 	# toggles depending on if on or off
 	if stove_view:
 		stove_view.visible = not stove_view.visible
+	
+	 # Set stove_open based on visibility
+	var draggable_objects = get_tree().get_nodes_in_group("draggable_object")
+
+	for draggable in draggable_objects:
+		draggable.stove_open = stove_view.visible

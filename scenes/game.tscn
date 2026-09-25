@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://7utnqki6n1gg"]
+
+[ext_resource type="Script" uid="uid://dp82apiebaljq" path="res://scenes/game.gd" id="1_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://c67vaaf8qa2xn" path="res://scenes/level-one.tscn" id="1_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://cqgtcbt8cusjx" path="res://scenes/demo-screen.tscn" id="2_lnu2h"]
+
+[node name="Game" type="Node2D" unique_id=253081777]
+script = ExtResource("1_lnu2h")
+
+[node name="LevelOne" parent="." unique_id=501430909 instance=ExtResource("1_yqjtg")]
+
+[node name="DemoScreen" parent="." unique_id=31856260 instance=ExtResource("2_lnu2h")]
+visible = false

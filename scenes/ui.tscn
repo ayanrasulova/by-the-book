@@ -71,10 +71,12 @@ scale = Vector2(-0.98501736, 1.0229485)
 color = Color(0.03322228, 0.03772443, 0.055274256, 1)
 
 [node name="Recipe" parent="CanvasLayer/Control" unique_id=1600319047 instance=ExtResource("2_o15ma")]
+z_index = 2
 position = Vector2(1472, 192)
 scale = Vector2(0.2657003, 0.26570028)
 
 [node name="Carrot" parent="CanvasLayer/Control" unique_id=1295346641 instance=ExtResource("3_gdt2y")]
+z_index = 2
 position = Vector2(1719.9999, 336)
 
 [node name="StoveView" parent="CanvasLayer" unique_id=2004982467 instance=ExtResource("3_mhncc")]

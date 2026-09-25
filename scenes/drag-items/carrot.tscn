@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3qwlr"]
 size = Vector2(29.237305, 13.073695)
 
-[node name="Carrot" type="Area2D" unique_id=1600319047]
+[node name="Carrot" type="Area2D" unique_id=1600319047 groups=["cookable_item"]]
 scale = Vector2(0.16134933, 0.13823579)
 script = ExtResource("1_korr6")
 
