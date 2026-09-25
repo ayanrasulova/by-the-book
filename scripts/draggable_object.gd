@@ -4,9 +4,16 @@ var dragging := false
 var drag_offset := Vector2.ZERO
 
 
-# clamp boundaries 
-var min_boundary := Vector2(1275, 200)
-var max_boundary := Vector2(1980, 600)
+@export var counter_min_boundary := Vector2(1275, 50)
+@export var counter_max_boundary := Vector2(1980, 400)
+
+@export var stove_min_boundary := Vector2(1275, 200)
+@export var stove_max_boundary := Vector2(1980, 900)
+
+var stove_open = false
+
+
+
 
 func _ready():
 	print("RECIPE SCRIPT IS RUNNING")
@@ -34,6 +41,18 @@ func _input(event):
 	elif event is InputEventMouseMotion:
 		if dragging:
 			var target_position = get_global_mouse_position() + drag_offset
+
+			var min_boundary
+			var max_boundary
+			
+			# clamp depends if stove open
+			if stove_open:
+				min_boundary = stove_min_boundary
+				max_boundary = stove_max_boundary
+			else:
+				min_boundary = counter_min_boundary
+				max_boundary = counter_max_boundary
+
 
 			# clamp recipe position
 			global_position.x = clamp(
