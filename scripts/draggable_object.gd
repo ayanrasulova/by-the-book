@@ -54,7 +54,7 @@ func _input(event):
 				print("Is cookable: ", is_in_group("cookable_item"))
 				
 				if was_dragging and over_stove and is_in_group("cookable_item"):
-					get_tree().change_scene_to_file("res://demo-screen.tscn")
+					get_tree().change_scene_to_file("res://scenes/demo-screen.tscn")
 
 
 	elif event is InputEventMouseMotion:

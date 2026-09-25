@@ -8,17 +8,21 @@ offset_bottom = 40.0
 scale = Vector2(48.145947, 27.132648)
 color = Color(0.029506557, 0.029506557, 0.029506557, 1)
 
-[node name="TextEdit" type="TextEdit" parent="." unique_id=1593726158]
-offset_right = 8.0
-offset_bottom = 8.0
-scale = Vector2(2.7927613, 2.4771478)
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-text = "this is the demo!! i know it is really short but the intention was for the pass it on to be passing on recipes 
+[node name="Label" type="Label" parent="." unique_id=439431567]
+offset_left = 80.0
+offset_top = 392.0
+offset_right = 1791.0
+offset_bottom = 623.0
+scale = Vector2(1.0469234, 1.3408626)
+text = "hi hi this is the demo!! i know it is really short but the intention was for the pass it on to be passing on recipes with a larger focus on narrative + a \"cozy\" feeling... so i focused a lot on building ambience over actual gameplay
 
-I wanted the story to follow along multiple generations of recipes \"passed on\" w/ levels getting progressively harder as knowledge is lost you must find missing gaps via non written methods
+the goal is to kind of have a \"papers please\" type of gameplay where the player can drag things around
 
-in the future i would add more sound effects, more mechanics (like chopping boards, different forms of ingredients, etc.)
+i intended for game design choices such as lighting, ambience effects to tell a story (with the first level being more ominous as the narrative would reflect different generations becoming more hopeful 
+as the recipes pass on to show themes of overcoming generational trauma...)
 
-credits
+i wanted levels getting progressively harder as knowledge is lost you must find missing gaps via non written methods ideally. in the future i would add more sound effects, more mechanics
+ (like chopping boards, different forms of ingredients, etc!! i spent a lot of time getting down the design decisions 
+
 
 environment assets - used pixel room creator (by RainWinther), rooms created by me other art and assets created by me programmed by me"

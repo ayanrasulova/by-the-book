@@ -21,7 +21,7 @@ offset_bottom = 3100.0
 scale = Vector2(0.46864912, 0.545549)
 texture = ExtResource("1_i8r03")
 
-[node name="Area2D" type="Area2D" parent="Pot" unique_id=1253662827]
+[node name="Area2D" type="Area2D" parent="Pot" unique_id=1253662827 groups=["stove_target"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Pot/Area2D" unique_id=107206744]
 position = Vector2(2099.6523, 1466.4128)
