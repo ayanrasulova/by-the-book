@@ -54,6 +54,19 @@ position = Vector2(682.8297, 721.5473)
 scale = Vector2(0.845, 0.845)
 speed = 160
 
+[node name="Label" type="Label" parent="Room/Player" unique_id=291103666]
+offset_left = -134.48364
+offset_top = -77.627464
+offset_right = 211.51636
+offset_bottom = -28.627464
+scale = Vector2(0.7786854, 1.0668161)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.52906674, 0.5290667, 0.5290667, 1)
+theme_override_constants/outline_size = 5
+text = "i'd like to make a carrot soup...
+ (e to interact)"
+horizontal_alignment = 1
+
 [node name="FlickerAmbience" type="StaticBody2D" parent="Room" unique_id=1382824982]
 script = ExtResource("2_ff0gm")
 
