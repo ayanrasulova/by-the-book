@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dxmp57npt6w1a"]
 
-[ext_resource type="Texture2D" uid="uid://cmccmdb5cmk8s" path="res://assets/textures/temp_pot.png" id="1_nglw4"]
+[ext_resource type="Texture2D" uid="uid://cmccmdb5cmk8s" path="res://assets/textures/temp_pot.png" id="1_i8r03"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mb2gj"]
 radius = 1510.8258
@@ -19,7 +19,7 @@ offset_top = 128.0
 offset_right = 4168.0
 offset_bottom = 3100.0
 scale = Vector2(0.46864912, 0.545549)
-texture = ExtResource("1_nglw4")
+texture = ExtResource("1_i8r03")
 
 [node name="Area2D" type="Area2D" parent="Pot" unique_id=1253662827]
 
