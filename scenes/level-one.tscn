@@ -9,7 +9,7 @@
 [ext_resource type="Shader" uid="uid://4buvhkrvm8g4" path="res://shaders/first-room.gdshader" id="5_otko2"]
 [ext_resource type="AudioStream" uid="uid://ykihx72423xw" path="res://assets/audio/flicker2.mp3" id="7_ekdwa"]
 [ext_resource type="PackedScene" uid="uid://d2b2oahsyhehs" path="res://scenes/audio/Audio.tscn" id="7_wi6g3"]
-[ext_resource type="PackedScene" uid="uid://bx7mioxcgwyg3" path="res://scenes/counterview.tscn" id="9_otko2"]
+[ext_resource type="PackedScene" uid="uid://bx7mioxcgwyg3" path="res://scenes/ui.tscn" id="9_otko2"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hqntj"]
 shader = ExtResource("4_ekdwa")

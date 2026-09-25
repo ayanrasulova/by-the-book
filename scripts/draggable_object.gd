@@ -10,6 +10,9 @@ var drag_offset := Vector2.ZERO
 @export var stove_min_boundary := Vector2(1275, 200)
 @export var stove_max_boundary := Vector2(1980, 900)
 
+# original size of object
+var original_scale: Vector2
+
 var stove_open = false
 
 
@@ -17,6 +20,7 @@ var stove_open = false
 
 func _ready():
 	print("RECIPE SCRIPT IS RUNNING")
+	original_scale = $Sprite2D.scale
 
 
 func _input(event):
@@ -29,13 +33,13 @@ func _input(event):
 
 					dragging = true
 					drag_offset = global_position - get_global_mouse_position()
-					$Sprite2D.scale = Vector2(1.1, 1.1)
+					$Sprite2D.scale = original_scale * 1.1
 
 					get_viewport().set_input_as_handled()
 
 			else:
 				dragging = false
-				$Sprite2D.scale = Vector2(1.0, 1.0)
+				$Sprite2D.scale = original_scale
 
 
 	elif event is InputEventMouseMotion:

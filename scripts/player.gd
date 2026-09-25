@@ -26,6 +26,11 @@ func leave_area(area):
 	if area == current_obj:
 		area.get_node("PointLight2D").visible = false 
 		current_obj = null
+		
+		# close current views (need to get nodes)
+		var stove_view = get_tree().get_first_node_in_group("stove_view")
+		if stove_view:
+			stove_view.visible = false
 
 func _input(event):
 	if current_obj and event.is_action_pressed("interact"):

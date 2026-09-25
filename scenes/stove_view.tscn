@@ -5,7 +5,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_mb2gj"]
 radius = 1510.8258
 
-[node name="StoveView" type="Node2D" unique_id=2004982467]
+[node name="StoveView" type="Node2D" unique_id=2004982467 groups=["stove_view"]]
 
 [node name="TempStoveView" type="ColorRect" parent="." unique_id=1847003798]
 offset_right = 792.0

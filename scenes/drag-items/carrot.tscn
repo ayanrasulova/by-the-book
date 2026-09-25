@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cs656kq4528qs"]
+
+[ext_resource type="Script" uid="uid://bdcewaxodton6" path="res://scripts/draggable_object.gd" id="1_korr6"]
+[ext_resource type="Texture2D" uid="uid://cvb0hjyit3724" path="res://assets/textures/tempcarrot.png" id="2_korr6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3qwlr"]
+size = Vector2(29.237305, 13.073695)
+
+[node name="Carrot" type="Area2D" unique_id=1600319047]
+scale = Vector2(0.16134933, 0.13823579)
+script = ExtResource("1_korr6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1482183071]
+position = Vector2(-22.999998, 28.999998)
+scale = Vector2(0.47251344, 0.4209621)
+texture = ExtResource("2_korr6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1191266175]
+position = Vector2(-12.999996, 12.000004)
+rotation = -0.63668853
+scale = Vector2(37.230183, -27.087648)
+shape = SubResource("RectangleShape2D_3qwlr")

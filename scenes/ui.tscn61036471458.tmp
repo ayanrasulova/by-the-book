@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://bx7mioxcgwyg3"]
+
+[ext_resource type="Texture2D" uid="uid://dap5v5b5csbjh" path="res://assets/textures/newgranite.png" id="1_miyf1"]
+[ext_resource type="PackedScene" uid="uid://d2gafpq7rsnlr" path="res://scenes/drag-items/recipe.tscn" id="2_o15ma"]
+[ext_resource type="PackedScene" uid="uid://cs656kq4528qs" path="res://scenes/drag-items/carrot.tscn" id="3_gdt2y"]
+[ext_resource type="PackedScene" uid="uid://dxmp57npt6w1a" path="res://scenes/stove_view.tscn" id="3_mhncc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3qwlr"]
+size = Vector2(10.455485, 16.305923)
+
+[node name="Ui" type="Control" unique_id=805446961]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=36374221]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=1266859590]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="EmptyRect" type="ColorRect" parent="CanvasLayer/Control" unique_id=412218885]
+layout_mode = 0
+offset_left = 1128.0
+offset_top = -64.0
+offset_right = 1135.9999
+offset_bottom = 1016.0
+rotation = -1.5707964
+scale = Vector2(142.13376, 0.7403859)
+pivot_offset = Vector2(8.459671, -0.510376)
+color = Color(0.11646146, 0.15426141, 0.2549349, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control" unique_id=278405366]
+layout_mode = 0
+offset_left = 1152.0
+offset_right = 1192.0
+offset_bottom = 40.0
+scale = Vector2(19.153685, 27.033504)
+
+[node name="Granite" type="TextureRect" parent="CanvasLayer/Control/VBoxContainer" unique_id=1824924823]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(-8.775, 7.11)
+offset_transform_position_ratio = Vector2(0.045, 0)
+offset_transform_scale = Vector2(2.375, 1.703)
+texture = ExtResource("1_miyf1")
+expand_mode = 5
+
+[node name="CounterDragArea" type="Area2D" parent="CanvasLayer/Control" unique_id=552917757]
+position = Vector2(1152, 0)
+scale = Vector2(58.16953, -506.54263)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Control/CounterDragArea" unique_id=1791556400]
+position = Vector2(6.532631, -0.5053869)
+scale = Vector2(1.2496083, 0.061988145)
+shape = SubResource("RectangleShape2D_3qwlr")
+
+[node name="SideBarDark" type="ColorRect" parent="CanvasLayer/Control" unique_id=1861156960]
+layout_mode = 0
+offset_left = 1144.0
+offset_right = 1152.0
+offset_bottom = 1080.0
+scale = Vector2(-0.98501736, 1.0229485)
+color = Color(0.03322228, 0.03772443, 0.055274256, 1)
+
+[node name="Recipe" parent="CanvasLayer/Control" unique_id=1600319047 instance=ExtResource("2_o15ma")]
+position = Vector2(1472, 192)
+scale = Vector2(0.2657003, 0.26570028)
+
+[node name="Carrot" parent="CanvasLayer/Control" unique_id=1295346641 instance=ExtResource("3_gdt2y")]
+position = Vector2(1719.9999, 336)
+
+[node name="StoveView" parent="CanvasLayer" unique_id=2004982467 instance=ExtResource("3_mhncc")]
+visible = false
+position = Vector2(1160, 528)
+scale = Vector2(0.17897123, 0.16643322)

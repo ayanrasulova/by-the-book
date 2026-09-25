@@ -14,5 +14,13 @@ func interact(object):
 		
 		
 func open_stove():
+	print(get_tree().get_nodes_in_group("stove_view"))
 	var stove_view = get_tree().get_first_node_in_group("stove_view")
-	stove_view.visible = true
+	
+	if stove_view == null:
+		print("StoveView not found in the active scene tree")
+		return
+		
+	# toggles depending on if on or off
+	if stove_view:
+		stove_view.visible = not stove_view.visible
