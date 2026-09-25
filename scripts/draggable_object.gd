@@ -89,12 +89,20 @@ func _input(event):
 
 # dragging items to stove
 func _on_area_entered(area: Area2D):
+	print("ENTERED AREA: ", area.name)
+	print("GROUPS: ", area.get_groups())
+
 	if area.is_in_group("stove_target"):
 		over_stove = true
+		print("OVER STOVE: TRUE")
 
 func _on_area_exited(area: Area2D):
+	print("EXITED AREA: ", area.name)
+
 	if area.is_in_group("stove_target"):
 		over_stove = false
+		print("OVER STOVE: FALSE")
+		
 		
 		
 func is_mouse_over_recipe() -> bool:
